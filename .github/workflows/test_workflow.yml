@@ -37,6 +37,8 @@ jobs:
           python-version: '3.12'
       - name: Run tests
         run: python --version
+      - name: install numpy
+        run: pip install numpy
       - name: check python3
         run: python3 mathematical_operation.py
     
