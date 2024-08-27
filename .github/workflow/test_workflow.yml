@@ -1,0 +1,17 @@
+name: Test Project
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: echo "Running tests"
+      - name: Run Test2
+        run: echo "Running Test2"
+    test2:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run tests
+          run: echo "Running tests"
+        - name: Run Test2
+          run: echo "Running Test2"
