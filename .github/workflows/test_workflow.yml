@@ -25,4 +25,18 @@ jobs:
         run: python --version
       - name: check python3
         run: python3 --version
+
+  test4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get the code
+        uses: actions/checkout@v4
+      - name: Install python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run tests
+        run: python --version
+      - name: check python3
+        run: python3 mathematical_operation.py
     
