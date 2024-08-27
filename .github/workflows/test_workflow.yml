@@ -15,3 +15,14 @@ jobs:
         run: echo "Running tests"
       - name: Run Test2
         run: echo "Running Test2"
+    
+  test3:
+    runs-on: ubuntu-latest # gtihub hosted runner
+    setps:
+      - name: Get the code
+        uses: actions/checkout@v4" # action checkout
+      - name: Run tests
+        run: python --version
+      - name: check python3
+        run: python3 --version
+    
