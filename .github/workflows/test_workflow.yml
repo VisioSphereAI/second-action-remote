@@ -17,7 +17,7 @@ jobs:
         run: echo "Running Test2"
     
   test3:
-    needs: test1
+    needs: test
     runs-on: ubuntu-latest # gtihub hosted runner
     steps:
       - name: Get the code
