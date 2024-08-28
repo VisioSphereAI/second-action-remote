@@ -11,5 +11,5 @@ jobs:
         run: echo "Running tests"
       - name: github expression and object context
         run: echo "print git hub object ${{ToJson(github)}}""
-      - name: print the running jobs & step
-        run: echo "print the running jobs & step ${{toJson(job)}} & ${{toJson(steps)}} & ${{toJson(jobs)}}""
+      # - name: print the running jobs & step
+      #   run: echo "print the running jobs & step ${{toJson(job)}} & ${{toJson(steps)}} & ${{toJson(jobs)}}""
